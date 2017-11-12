@@ -5,9 +5,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script >
             $(document).ready(function(){
-                $('#sample li').css("color","blue");
+                $('li:first').css("color","blue");
                 $('.item.second').css("color","green");
                 $('.div1  + .div').css("color",'red');
+                $('li:even').css("font-weight", 'bold');
+                $('li:eq(3)').css("font-style", 'italic');
             });
         </script>
     </head>
