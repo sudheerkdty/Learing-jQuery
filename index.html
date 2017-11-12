@@ -10,6 +10,10 @@
                 $('.div1  + .div').css("color",'red');
                 $('li:even').css("font-weight", 'bold');
                 $('li:eq(3)').css("font-style", 'italic');
+                $('div:hidden').show(10);
+                $("div:contains(two)").css("color",'green');
+                $('div[class$=two]').css("font-weight", 'bold');
+                $('ol li:nth-child(2n+1)').css("border", "2px solid red");
             });
         </script>
     </head>
@@ -20,16 +24,17 @@
             <li class="item third">BMW</li>
             <li>Maserati</li>
         </ol>
-        <div class="div">
-            one
+        <div style="display: none;">
+            <div class="div" >
+                one
+            </div>
+            <div class="div1 two">
+                two
+            </div>
+            <div class="div">
+                three
+            </div>
         </div>
-        <div class="div1">
-            two
-        </div>
-        <div class="div">
-            three
-        </div>
-        <div>
 
 
     </body>
